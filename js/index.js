@@ -57,9 +57,17 @@ navItem5.className = ('nav-item-5');
 const navItem6 = navItems[5];
 navItem6.className = ('nav-item-6');
 // navbar text
-navItem1.textContent = 'Services';
-navItem2.textContent = 'Product';
-navItem3.textContent = 'Vision';
-navItem4.textContent = 'Features';
-navItem5.textContent = 'About';
-navItem6.textContent = 'Contact';
+navItem1.textContent = siteContent["nav"]["nav-item-1"];
+navItem2.textContent = siteContent["nav"]["nav-item-2"];
+navItem3.textContent = siteContent["nav"]["nav-item-3"];
+navItem4.textContent = siteContent["nav"]["nav-item-4"];
+navItem5.textContent = siteContent["nav"]["nav-item-5"];
+navItem6.textContent = siteContent["nav"]["nav-item-6"];
+
+// cta
+const mainPageH1 = document.querySelector('.cta-text h1');
+mainPageH1.textContent = siteContent["cta"]["h1"];
+const mainPageBtn = document.querySelector('.cta-text button');
+mainPageBtn.textContent = siteContent["cta"]["button"];
+const mainPageImg = document.querySelector("#cta-img");
+mainPageImg.setAttribute('src', siteContent["cta"]["img-src"])
