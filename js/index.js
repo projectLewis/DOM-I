@@ -121,3 +121,5 @@ const contactPhone = contactChildren[2];
 contactPhone.textContent = siteContent["contact"]["phone"];
 const contactEmail = contactChildren[3];
 contactEmail.textContent = siteContent["contact"]["email"];
+
+// Footer Section
