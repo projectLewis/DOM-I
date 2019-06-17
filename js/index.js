@@ -123,3 +123,6 @@ const contactEmail = contactChildren[3];
 contactEmail.textContent = siteContent["contact"]["email"];
 
 // Footer Section
+const footer = document.querySelector('footer');
+const footerP = footer.querySelector('p');
+footerP.textContent = siteContent["footer"]["copyright"];
