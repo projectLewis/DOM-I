@@ -72,12 +72,16 @@ ctaBtn.textContent = siteContent["cta"]["button"];
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-// Main Content
+// Main Top Content
 const mainTopContent = document.querySelector('.top-content');
 const topContents = mainTopContent.children;
-const topContent1 = topContents[0];
-const topContent1H4 = topContent1.querySelector('.text-content h4');
-topContent1H4.textContent = siteContent["main-content"]["features-h4"];
-const topContent2 = topContents[1];
-const topContent2H4 = topContent2.querySelector('.text-content h4');
-topContent2H4.textContent = siteContent["main-content"]["about-h4"];
+const featuresContent = topContents[0];
+const featuresContentH4 = featuresContent.querySelector('.text-content h4');
+const featuresContentP = featuresContent.querySelector('.text-content p');
+featuresContentH4.textContent = siteContent["main-content"]["features-h4"];
+featuresContentP.textContent = siteContent["main-content"]["features-content"];
+const aboutContent = topContents[1];
+const aboutContentH4 = aboutContent.querySelector('.text-content h4');
+const aboutContentP = aboutContent.querySelector('.text-content p');
+aboutContentH4.textContent = siteContent["main-content"]["about-h4"];
+aboutContentP.textContent = siteContent["main-content"]["about-content"];
