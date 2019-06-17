@@ -72,7 +72,8 @@ ctaBtn.textContent = siteContent["cta"]["button"];
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-// Main Top Content
+// Main Content Umbrella
+// Top Content
 const mainTopContent = document.querySelector('.top-content');
 const topContents = mainTopContent.children;
 const featuresContent = topContents[0];
@@ -85,3 +86,7 @@ const aboutContentH4 = aboutContent.querySelector('.text-content h4');
 const aboutContentP = aboutContent.querySelector('.text-content p');
 aboutContentH4.textContent = siteContent["main-content"]["about-h4"];
 aboutContentP.textContent = siteContent["main-content"]["about-content"];
+
+// middle images
+const middleImg = document.querySelector("#middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
