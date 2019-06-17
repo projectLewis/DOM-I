@@ -37,9 +37,7 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-const logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// Nav Section
 // TODO refactor with loops
 // navbar classes
 const navbar = document.querySelector('nav');
@@ -63,6 +61,10 @@ navItem3.textContent = siteContent["nav"]["nav-item-3"];
 navItem4.textContent = siteContent["nav"]["nav-item-4"];
 navItem5.textContent = siteContent["nav"]["nav-item-5"];
 navItem6.textContent = siteContent["nav"]["nav-item-6"];
+// logo, included with source javascript
+const logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+// Task 3 adding new content to Navbar
 
 // cta
 const ctaH1 = document.querySelector('.cta-text h1');
