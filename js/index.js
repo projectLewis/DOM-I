@@ -73,3 +73,11 @@ const ctaImg = document.querySelector("#cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // Main Content
+const mainTopContent = document.querySelector('.top-content');
+const topContents = mainTopContent.children;
+const topContent1 = topContents[0];
+const topContent1H4 = topContent1.querySelector('.text-content h4');
+topContent1H4.textContent = siteContent["main-content"]["features-h4"];
+const topContent2 = topContents[1];
+const topContent2H4 = topContent2.querySelector('.text-content h4');
+topContent2H4.textContent = siteContent["main-content"]["about-h4"];
