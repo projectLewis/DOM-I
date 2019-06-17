@@ -43,7 +43,7 @@ const siteContent = {
 // TODO refactor with loops
 // navbar classes
 const navbar = document.querySelector('nav');
-const navItems = navbar.children;
+const navItems = document.querySelectorAll('nav a');
 const navItem1 = navItems[0];
 navItem1.className = ('nav-item-1');
 const navItem2 = navItems[1];
@@ -76,10 +76,6 @@ navPrepend.href = "#";
 navPrepend.textContent = siteContent["nav"]["prepend"];
 navbar.prepend(navPrepend);
 const childrenArray = document.querySelectorAll('nav a');
-// const childrenArray = Array.from(navbar.children);
-// for (let anchor of childrenArray) {
-//   anchor.style.color = "green";
-// }
 childrenArray.forEach((anchor) => {
   return anchor.style.color = "green";
 });
