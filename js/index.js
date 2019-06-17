@@ -90,3 +90,22 @@ aboutContentP.textContent = siteContent["main-content"]["about-content"];
 // middle images
 const middleImg = document.querySelector("#middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Bottom Content
+const mainBottomContent = document.querySelector('.bottom-content');
+const bottomContents = mainBottomContent.children;
+const servicesContent = bottomContents[0];
+const servicesContentH4 = servicesContent.querySelector('.text-content h4');
+const servicesContentP = servicesContent.querySelector('.text-content p');
+servicesContentH4.textContent = siteContent["main-content"]["services-h4"];
+servicesContentP.textContent = siteContent["main-content"]["services-content"];
+const productContent = bottomContents[1];
+const productContentH4 = productContent.querySelector('.text-content h4');
+const productContentP = productContent.querySelector('.text-content p');
+productContentH4.textContent = siteContent["main-content"]["product-h4"];
+productContentP.textContent = siteContent["main-content"]["product-content"];
+const visionContent = bottomContents[2];
+const visionContentH4 = visionContent.querySelector('.text-content h4');
+const visionContentP = visionContent.querySelector('.text-content p');
+visionContentH4.textContent = siteContent["main-content"]["vision-h4"];
+visionContentP.textContent = siteContent["main-content"]["vision-content"];
