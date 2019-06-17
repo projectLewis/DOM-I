@@ -40,33 +40,18 @@ const siteContent = {
 };
 
 // Nav Section
-// TODO refactor with loops
 // navbar classes
 const navbar = document.querySelector('nav');
 const navItems = document.querySelectorAll('nav a');
-const navItem1 = navItems[0];
-navItem1.className = ('nav-item-1');
-const navItem2 = navItems[1];
-navItem2.className = ('nav-item-2');
-const navItem3 = navItems[2];
-navItem3.className = ('nav-item-3');
-const navItem4 = navItems[3];
-navItem4.className = ('nav-item-4');
-const navItem5 = navItems[4];
-navItem5.className = ('nav-item-5');
-const navItem6 = navItems[5];
-navItem6.className = ('nav-item-6');
-// navbar text
-navItem1.textContent = siteContent["nav"]["nav-item-1"];
-navItem2.textContent = siteContent["nav"]["nav-item-2"];
-navItem3.textContent = siteContent["nav"]["nav-item-3"];
-navItem4.textContent = siteContent["nav"]["nav-item-4"];
-navItem5.textContent = siteContent["nav"]["nav-item-5"];
-navItem6.textContent = siteContent["nav"]["nav-item-6"];
-// logo, included with source javascript
+// adds the class name, and title to each navbar item
+navItems.forEach((anchor, index) => {
+  anchor.className = (`nav-item-${ index + 1 }`);
+  anchor.textContent = siteContent['nav'][`nav-item-${ index + 1 }`];
+});
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
-// Task 3 adding new content to Navbar
+
+// Task 3 adding new content to Navbar & changing nav color
 const navAppend = document.createElement('a');
 navAppend.href = "#";
 navAppend.textContent = siteContent["nav"]["append"];
