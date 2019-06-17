@@ -72,7 +72,7 @@ ctaBtn.textContent = siteContent["cta"]["button"];
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-// Main Content Umbrella
+// Main Content Section
 // Top Content
 const mainTopContent = document.querySelector('.top-content');
 const topContents = mainTopContent.children;
@@ -109,3 +109,19 @@ const visionContentH4 = visionContent.querySelector('.text-content h4');
 const visionContentP = visionContent.querySelector('.text-content p');
 visionContentH4.textContent = siteContent["main-content"]["vision-h4"];
 visionContentP.textContent = siteContent["main-content"]["vision-content"];
+
+// Contact Section
+const contactSection = document.querySelector('.contact');
+// const contactChildren = contactSection.children;
+// const contactH4 = contactChilren[0];
+// contactH4.textContent = siteContent["contact"]["contact-h4"];
+// const contactAddress = contactChilren[1];
+// contactAddress.textContent = siteContent["contact"]["address"];
+// const contactPhone = contactChilren[2];
+// contactPhone.textContent = siteContent["contact"]["phone"];
+// const contactEmail = contactChilren[3];
+// contactEmail.textContent = siteContent["contact"]["email"];
+contactSection.children[0].textContent = siteContent["contact"]["contact-h4"];
+contactSection.children[1].textContent = siteContent["contact"]["address"];
+contactSection.children[2].textContent = siteContent["contact"]["phone"];
+contactSection.children[3].textContent = siteContent["contact"]["email"];
