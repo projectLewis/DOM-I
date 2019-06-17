@@ -40,7 +40,8 @@ const siteContent = {
 // Example: Update the img src for the logo
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
-
+// TODO refactor with loops
+// navbar classes
 const navbar = document.querySelector('nav');
 const navItems = navbar.children;
 const navItem1 = navItems[0];
@@ -55,4 +56,10 @@ const navItem5 = navItems[4];
 navItem5.className = ('nav-item-5');
 const navItem6 = navItems[5];
 navItem6.className = ('nav-item-6');
-// navItem1.textContent = 'Services'
+// navbar text
+navItem1.textContent = 'Services';
+navItem2.textContent = 'Product';
+navItem3.textContent = 'Vision';
+navItem4.textContent = 'Features';
+navItem5.textContent = 'About';
+navItem6.textContent = 'Contact';
