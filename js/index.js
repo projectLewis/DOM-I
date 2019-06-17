@@ -112,16 +112,12 @@ visionContentP.textContent = siteContent["main-content"]["vision-content"];
 
 // Contact Section
 const contactSection = document.querySelector('.contact');
-// const contactChildren = contactSection.children;
-// const contactH4 = contactChilren[0];
-// contactH4.textContent = siteContent["contact"]["contact-h4"];
-// const contactAddress = contactChilren[1];
-// contactAddress.textContent = siteContent["contact"]["address"];
-// const contactPhone = contactChilren[2];
-// contactPhone.textContent = siteContent["contact"]["phone"];
-// const contactEmail = contactChilren[3];
-// contactEmail.textContent = siteContent["contact"]["email"];
-contactSection.children[0].textContent = siteContent["contact"]["contact-h4"];
-contactSection.children[1].textContent = siteContent["contact"]["address"];
-contactSection.children[2].textContent = siteContent["contact"]["phone"];
-contactSection.children[3].textContent = siteContent["contact"]["email"];
+const contactChildren = contactSection.children;
+const contactH4 = contactChildren[0];
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+const contactAddress = contactChildren[1];
+contactAddress.textContent = siteContent["contact"]["address"];
+const contactPhone = contactChildren[2];
+contactPhone.textContent = siteContent["contact"]["phone"];
+const contactEmail = contactChildren[3];
+contactEmail.textContent = siteContent["contact"]["email"];
