@@ -65,9 +65,11 @@ navItem5.textContent = siteContent["nav"]["nav-item-5"];
 navItem6.textContent = siteContent["nav"]["nav-item-6"];
 
 // cta
-const mainPageH1 = document.querySelector('.cta-text h1');
-mainPageH1.textContent = siteContent["cta"]["h1"];
-const mainPageBtn = document.querySelector('.cta-text button');
-mainPageBtn.textContent = siteContent["cta"]["button"];
-const mainPageImg = document.querySelector("#cta-img");
-mainPageImg.setAttribute('src', siteContent["cta"]["img-src"])
+const ctaH1 = document.querySelector('.cta-text h1');
+ctaH1.textContent = siteContent["cta"]["h1"];
+const ctaBtn = document.querySelector('.cta-text button');
+ctaBtn.textContent = siteContent["cta"]["button"];
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// Main Content
