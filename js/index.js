@@ -75,6 +75,14 @@ const navPrepend = document.createElement('a');
 navPrepend.href = "#";
 navPrepend.textContent = siteContent["nav"]["prepend"];
 navbar.prepend(navPrepend);
+const childrenArray = document.querySelectorAll('nav a');
+// const childrenArray = Array.from(navbar.children);
+// for (let anchor of childrenArray) {
+//   anchor.style.color = "green";
+// }
+childrenArray.forEach((anchor) => {
+  return anchor.style.color = "green";
+});
 
 // cta
 const ctaH1 = document.querySelector('.cta-text h1');
