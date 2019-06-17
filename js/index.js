@@ -6,6 +6,8 @@ const siteContent = {
     "nav-item-4": "Features",
     "nav-item-5": "About",
     "nav-item-6": "Contact",
+    "append": "Append",
+    "prepend": "Prepend",
     "img-src": "img/logo.png"
   },
   "cta": {
@@ -65,6 +67,14 @@ navItem6.textContent = siteContent["nav"]["nav-item-6"];
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 // Task 3 adding new content to Navbar
+const navAppend = document.createElement('a');
+navAppend.href = "#";
+navAppend.textContent = siteContent["nav"]["append"];
+navbar.appendChild(navAppend);
+const navPrepend = document.createElement('a');
+navPrepend.href = "#";
+navPrepend.textContent = siteContent["nav"]["prepend"];
+navbar.prepend(navPrepend);
 
 // cta
 const ctaH1 = document.querySelector('.cta-text h1');
