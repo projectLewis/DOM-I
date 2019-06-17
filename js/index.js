@@ -142,3 +142,21 @@ contactEmail.textContent = siteContent["contact"]["email"];
 const footer = document.querySelector('footer');
 const footerP = footer.querySelector('p');
 footerP.textContent = siteContent["footer"]["copyright"];
+
+// STRETCH
+const getStartedBtn = document.querySelector('.cta .cta-text button');
+let btnToggle = false;
+getStartedBtn.addEventListener('click', () => {
+  if (btnToggle === false) {
+    childrenArray.forEach((anchor) => {
+      return anchor.style.color = "red";
+    })
+    btnToggle = true;
+  }
+  else {
+    childrenArray.forEach((anchor) => {
+      return anchor.style.color = "green";
+    })
+    btnToggle = false;
+  }
+})
